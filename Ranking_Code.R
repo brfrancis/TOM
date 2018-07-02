@@ -44,5 +44,5 @@ tom_res=cbind(order(60*24*times(tom_res1[,3])),order(60*24*times(tom_res1[,4])),
 colnames(tom_res)<-c("Tour Position (Gun)","Position (Chip)", "Bib", "Name", "Chip Time", "Gun Time")
 tom_res %>%
 write.csv("TOM_Southport.csv", row.names = FALSE)
-TOM_Southport <- gs_upload("TOM_Southport.csv",overwrite = TRUE)
+TOM_Southport <- gs_upload("TOM_Southport.csv",overwrite = TRUE) 
 
